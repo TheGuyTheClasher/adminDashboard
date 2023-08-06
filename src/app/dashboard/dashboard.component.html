@@ -1,0 +1,69 @@
+
+<h2 class="mt-2">Yearly global sales</h2>
+<div class="yearlySalesContainer">
+  <ngx-charts-advanced-pie-chart
+  [scheme]="colorScheme"
+  [results]="pieChartData"
+  [view]="[900, 300]"
+  [gradient]="true">
+</ngx-charts-advanced-pie-chart>
+</div>
+
+<h2 class="mt-2">Employee records</h2>
+  <div class="table-container">
+    <mat-table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> Position </th>
+        <td mat-cell *matCellDef="let element"> {{ element.position }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef> Age </th>
+        <td mat-cell *matCellDef="let element"> {{ element.age }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="sex">
+        <th mat-header-cell *matHeaderCellDef> Sex </th>
+        <td mat-cell *matCellDef="let element"> {{ element.sex }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Designation">
+        <th mat-header-cell *matHeaderCellDef> Designation </th>
+        <td mat-cell *matCellDef="let element"> {{ element.Designation }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Department">
+        <th mat-header-cell *matHeaderCellDef> Department </th>
+        <td mat-cell *matCellDef="let element"> {{ element.Department }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Office">
+        <th mat-header-cell *matHeaderCellDef> Office </th>
+        <td mat-cell *matCellDef="let element"> {{ element.Office }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Salary">
+        <th mat-header-cell *matHeaderCellDef> Salary </th>
+        <td mat-cell *matCellDef="let element"> {{ element.Salary }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="JoiningDate">
+        <th mat-header-cell *matHeaderCellDef> Joining Date </th>
+        <td mat-cell *matCellDef="let element"> {{ element.JoiningDate }} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{ element.Email }} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </mat-table>
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 25]" showFirstLastButtons></mat-paginator>
+  </div>

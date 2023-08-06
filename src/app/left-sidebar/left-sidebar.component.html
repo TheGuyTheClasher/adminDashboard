@@ -1,0 +1,18 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav class="sidenav" mode="side" [opened]="isSidenavOpen">
+      <mat-nav-list>
+        <a mat-list-item routerLink="/dashboard">
+          <mat-icon style="color: white;">dashboard</mat-icon>
+          <span style="color: white;">Dashboard</span>
+        </a>
+        <a mat-list-item routerLink="/charts">
+          <mat-icon style="color: white;">bar_chart</mat-icon>
+          <span style="color: white;">Charts</span>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

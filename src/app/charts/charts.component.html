@@ -1,0 +1,66 @@
+<h1>Visual representation</h1>
+<div class="chartContainer">
+  <h4>Country-wise targeted sales</h4>
+  <ngx-charts-gauge
+  [results]="gaugeChartData"
+  [min]="0"
+  [max]="50000"
+  [angleSpan]="240"
+  [startAngle]="-120"
+  [bigSegments]="10"
+  [smallSegments]="5"
+  [legend]="true"
+  [view]="[900, 300]"
+  >
+</ngx-charts-gauge>
+</div>
+
+<div class="chartContainer mt-3">
+  <h4>Series 1 and 2 linear chart</h4>
+    <ngx-charts-line-chart
+      [view]="[900, 300]"
+      [scheme]="colorScheme"
+      [results]="lineChartData"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'X Axis Label'"
+      [yAxisLabel]="'Y Axis Label'"
+      (select)="onSelect($event)"
+    >
+    </ngx-charts-line-chart>
+  </div>
+  <div class="chartContainer mt-3">
+  <h4>Bar and Pie representation of series 1 and 2</h4>
+  <div class="barPieContainer">
+
+    <ngx-charts-bar-vertical
+    [view]="[450, 300]"
+    [scheme]="colorScheme"
+    [results]="barChartData"
+    [xAxis]="showXAxis"
+    [yAxis]="showYAxis"
+    [showXAxisLabel]="showXAxisLabel"
+    [showYAxisLabel]="showYAxisLabel"
+    [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel"
+    (select)="onSelect($event)"
+    >
+  </ngx-charts-bar-vertical>
+  
+  <ngx-charts-pie-chart
+    [view]="[450, 300]"
+    [scheme]="colorScheme"
+    [results]="pieChartData"
+    [labels]="showLabels"
+    [doughnut]="doughnut"
+    [explodeSlices]="explodeSlices"
+    (select)="onPieSelect($event)"
+    >
+  </ngx-charts-pie-chart>
+  
+</div>
+
+</div>

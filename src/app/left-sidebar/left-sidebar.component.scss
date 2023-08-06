@@ -1,0 +1,26 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 200px;
+    // background: linear-gradient(to bottom right, #3F51B5, #87CEFA);
+    background: linear-gradient(to bottom right, rgba(63, 81, 181, 0.8), rgba(63, 81, 181, 0.5));
+
+  }
+  
+  .mat-nav-list a {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+
+    span{
+      margin-left: 10px;
+      color: white;
+    }
+  }
+  
+  .mat-list-item {
+    cursor: pointer;
+  }
+  

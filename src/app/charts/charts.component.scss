@@ -1,0 +1,25 @@
+/* charts.component.css */
+:host {
+    display: block;
+    margin: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  ngx-charts-bar-vertical,
+  ngx-charts-pie-chart {
+    margin-right: 20px;
+  }
+  
+  .barPieContainer{
+    display: flex;
+    // justify-content: space-between;
+  }
+
+  .chartContainer{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+  }

@@ -60,6 +60,7 @@ export class ChartsComponent {
     return data;
   }
 
+  // gauge chart data
   gaugeChartData = [
     {
       "name": "Germany",
@@ -104,6 +105,7 @@ export class ChartsComponent {
       }
     }
   ]
+
   // Chart Configurations
   colorScheme = 'nightLights';
   showXAxis = true;
@@ -116,12 +118,4 @@ export class ChartsComponent {
   showLabels = true;
   doughnut = false;
   explodeSlices = false;
-
-  onSelect(event: any): void {
-    // Handle bar chart selection event here
-  }
-
-  onPieSelect(event: any): void {
-    // Handle pie chart selection event here
-  }
 }

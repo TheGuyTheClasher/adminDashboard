@@ -70,8 +70,6 @@ export class DashboardComponent {
     }
   ];
 
-
-   // Sample data for the table
    ELEMENT_DATA: TableRow[] = [
     { position: 1, name: 'John Doe', age: 36, sex: 'Male', Designation: 'Manager', Department: 'IT', Office: 'Mumbai', Salary: 13892, JoiningDate: '2020-03-15', Email: 'john.doe@example.com' },
     { position: 2, name: 'Jane Smith', age: 28, sex: 'Female', Designation: 'Senior Developer', Department: 'Software', Office: 'New York', Salary: 12000, JoiningDate: '2019-08-10', Email: 'jane.smith@example.com' },

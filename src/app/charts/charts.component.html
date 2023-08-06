@@ -28,7 +28,6 @@
       [showYAxisLabel]="true"
       [xAxisLabel]="'X Axis Label'"
       [yAxisLabel]="'Y Axis Label'"
-      (select)="onSelect($event)"
     >
     </ngx-charts-line-chart>
   </div>
@@ -46,7 +45,6 @@
     [showYAxisLabel]="showYAxisLabel"
     [xAxisLabel]="xAxisLabel"
     [yAxisLabel]="yAxisLabel"
-    (select)="onSelect($event)"
     >
   </ngx-charts-bar-vertical>
   
@@ -57,7 +55,6 @@
     [labels]="showLabels"
     [doughnut]="doughnut"
     [explodeSlices]="explodeSlices"
-    (select)="onPieSelect($event)"
     >
   </ngx-charts-pie-chart>
   
